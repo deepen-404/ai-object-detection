@@ -4,7 +4,8 @@ import { load as cocoSSDLoad, ObjectDetection as CocoModel, DetectedObject } fro
 import "@tensorflow/tfjs";
 import { renderPredictions } from "../../utils/render-predictions";
 
-let detectInterval: NodeJS.Timeout | undefined;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let detectInterval: any;
 
 const ObjectDetection: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
