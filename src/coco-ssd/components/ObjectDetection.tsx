@@ -72,10 +72,6 @@ const ObjectDetection: React.FC = () => {
     };
   }, []);
 
-  const containerStyle: React.CSSProperties = {
-    marginTop: '2rem'
-  };
-
   const contentContainerStyle: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
@@ -143,7 +139,7 @@ const ObjectDetection: React.FC = () => {
   };
 
   return (
-    <div style={containerStyle}>
+    <div>
       {isLoading ? (
         <div>Loading AI Model...</div>
       ) : (
